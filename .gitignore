@@ -25,7 +25,10 @@ gen/
 *.class
 
 # Local configuration file (sdk path, etc)
-*/local.properties
+*/local.properties  - actually needed for Travis CI
+local.properties
+# we need this so that backbone knows how to 
+!*/local.properties.bridge
 
 */.DS_Store
 */.metadata
@@ -70,7 +73,6 @@ tasks.xml
 .gradle
 */.gradle/
 */.gradle/**/*
-local.properties
 
 # IMLs are safe to ignore as long as your project is entirely managed by gradle and maven
 /**/*.iml
